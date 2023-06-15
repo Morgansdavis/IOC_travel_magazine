@@ -2,13 +2,13 @@
 layout: default
 title: Homepage
 background-position: bg-center
-banner-height: min-h-80
+banner-height: min-h-full
 text-position: items-center
 text-color: text-white
 banner-image: /uploads/travel/travel-2.jpg 
 heading: A whole new world
 sub-heading: surfing teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
-link-text: Read more
+link-text: 
 link-url: 
 seo:
   title:
@@ -22,3 +22,54 @@ seo:
 <!------------------------ Header banner ------------------------>
 
 {% include quarter-banner.html%}
+
+<!------------------------ About section ------------------------>
+
+<section class="p-[10%] bg-stone-100">
+  <div class="grid grid-cols md:grid-cols-4 ">
+    <div class="col-span-1 md:col-span-2 bg-cover pb-[125%]" style="background-image: url('/uploads/travel/travel-4.jpg')"></div>
+    <div class="col-span-1 md:col-span-2  py-[10%] px-5p">
+      <h2 class="normal-case bg-stone-300 text-center max-w-md p-8 text-5xl md:-ml-[40%] mb-12"> A fascinating heading about the site. </h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptates sint odio sed sunt maxime doloremque aliquam dolores debitis minus iure cumque nobis incidunt culpa quia doloribus earum voluptas provident!</p>
+      <p> Nostrum, voluptates sint odio sed sunt maxime doloremque aliquam dolores debitis minus iure cumque nobis incidunt culpa quia doloribus earum voluptas provident! </p>
+      <a href="#" class="mt-8 inline-block border-b-2 border-black text-2xl"> Read More </a>
+    </div>
+  </div>
+</section>
+
+<!------------------------ About section 2------------------------>
+
+<section class="p-[10%] bg-stone-100">
+  <div class="grid grid-cols md:grid-cols-4 ">
+    <div class="col-span-1 md:col-span-2  py-[10%] px-5p">
+      <h2 class="normal-case max-w-md text-5xl mb-12"> A fascinating heading about the site. </h2>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptates sint odio sed sunt maxime doloremque aliquam dolores debitis minus iure cumque nobis incidunt culpa quia doloribus earum voluptas provident!</p>
+      <p> Nostrum, voluptates sint odio sed sunt maxime doloremque aliquam dolores debitis minus iure cumque nobis incidunt culpa quia doloribus earum voluptas provident! </p>
+      <a href="#" class="mt-8 inline-block border-b-2 border-black text-2xl"> Read More </a>
+    </div>
+    <div class="col-span-1 md:col-span-2 bg-cover pb-[125%]" style="background-image: url('/uploads/travel/travel-4.jpg')"></div>
+  </div>
+
+
+</section>
+
+
+
+<!------------------------ Featured blog loop ------------------------>
+<section class="p-5p">
+  <h2 class="max-w-screen-xl mx-auto text-center mb-5"> Recently on the blog </h2>
+
+  <div class="max-w-screen-xl mx-auto md:columns-3">
+
+
+      {% assign featured_posts = site.posts | where: 'featured', true %}
+
+      {% for post in featured_posts limit:3 %}
+
+          {% include post-loop-item-square.html %}
+
+      {% endfor %}
+
+  </div>
+
+</section> 

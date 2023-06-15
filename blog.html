@@ -19,37 +19,23 @@ seo:
   hide-from-google: false
 ---
 
+<!--------- Need to achieve: 
+  Padding
+  box alignment for posts -->
+
 <!------------------------ Header banner ------------------------>
 
 {% include quarter-banner.html%}
 
 <!------------------------ Featured blog loop ------------------------>
 <section class="p-5p">
-  <h2 class="max-w-screen-xl mx-auto text-center"> Recently on the blog </h2>
+  <h2 class="max-w-screen-2xl mx-auto text-center mb-5"> Recently on the blog </h2>
 
-  <div class="max-w-screen-xl mx-auto md:columns-3">
+  <div class="max-w-screen-2xl mx-auto md:columns-3">
 
+      {% for post in site.posts limit:12 %}
 
-      {% assign featured_posts = site.posts | where: 'featured', true %}
-
-      {% for post in featured_posts limit:12 %}
-
-          <a class="post-item p-2 break-inside-avoid block mb-4" href="{{ post.url }}">
-              <div class="bg-cover 
-              {% cycle 'aspect-square', 'aspect-portrait', 'aspect-landscape', %}" 
-              style="background-image:url( '{{ post.featured_image }}' );"></div>
-              <div class="p-4 relative -top-4 left-4 bg-white">
-                  <h2 class="mt-1 font-serif text-3xl"> {{ post.title }} </h2>
-                  <p>{{post.description}} </p>
-                  <span href="{{post.url}}" class="text-2xl font-light border-b-2 inline-block mb-2"> {{page.link-text}} </span> 
-                  <p class="uppercase text-zinc-600 text-xs tracking-wide">
-                    {% for item in post.categories %}
-                        <span class="tag mr-2"> {{item}} </span>
-                    {% endfor %}
-                  </p>
-
-              </div>
-          </a>
+          {% include post-loop-item.html %}
 
       {% endfor %}
 
