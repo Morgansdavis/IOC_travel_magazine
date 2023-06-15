@@ -21,8 +21,8 @@
         font-weight: 300;
     }
 
-    h1, h2, h3, h4, h5, p,{
-        @apply mb-4
+    body h1, body h2, body h3, body h4, body h5, body p,{
+        @apply mb-4;
     }
 
     h2 {
@@ -32,6 +32,22 @@
     a {
         @apply uppercase font-serif font-light;
     }
+
+    .blog-content h2, h3, h4, h5 {
+        @apply text-sm md:text-base	 uppercase font-sans;
+    }
+
+    .blog-content p {
+        @apply font-sans
+    }
+
+    .blog-content blockquote {
+        @apply border-0;
+    }
+    .blog-content blockquote p {
+        @apply font-serif text-4xl not-italic font-normal; 
+    }
+
 
 } /* end layer base */
 

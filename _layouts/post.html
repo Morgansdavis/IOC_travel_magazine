@@ -2,33 +2,45 @@
 layout: default
 ---
 
-<!-------Header Banner --------->
+<!-----TODO
+    Need to add page heading and banners to all posts 
+------>
+
+
+<!-------Header Banner -------------------->
 
 {% include full-banner.html %}
 
 
-<!--------Post section --------->
+<!---------------Post title  ----------------->
 
-<section class="p-5 bg-zinc-50">
+<section class="p-2 border-b-2 border-black">
 
+    <div class="grid grid-cols-5 max-w-screen-lg mx-auto text-center items-center">
 
-        <div class="intro pt-6 p-4 text-center margin-b-2 max-w-screen-lg mx-auto">
-
-            {% for item in page.categories %}
-                <span class="text-sm uppercase tracking-wide p-1 text-zinc-600"> {{ item }}</span>
-            {% endfor %}
-            
-            <h1 class="text-6xl font-serif mt-4 mb-8"> {{ page.title }} </h1>
-            
-            <p class="text-sm uppercase tracking-wide text-zinc-600"> by <span class="font-bold"> {{ page.author }}  </span>| {{ page.date | date_to_string }} </p>
-         
+        <div class="col-span-1"> 
+            <p class="text-sm uppercase"> by {{ page.author }} </p>
         </div>
 
-        <div class="p-2 prose max-w-screen-lg mx-auto">
-
-            {{content}}
-
+        <div class=" col-span-3 intro pt-6 p-4 text-center margin-b-2 max-w-screen-lg mx-auto">
+            <h1 class="text-xl md:text-4xl uppercase font-serif mt-4 mb-8"> {{ page.title }} </h1>
         </div>
-        
 
+        <div class="col-span-1">
+            <p class="text-sm uppercase"> {{ page.date | date_to_string }} </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-------------------Post content   ----------------->
+
+<section> 
+    <div class="p-5p prose max-w-screen-md mx-auto blog-content">
+
+        {{content}}
+
+    </div>
 </section>

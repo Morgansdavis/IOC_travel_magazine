@@ -3,14 +3,13 @@
     {% cycle 'aspect-square', 'aspect-portrait', 'aspect-landscape', %}" 
     style="background-image:url( '{{ post.featured_image }}' );"></div>
     <div class="p-4 relative bg-stone-200">
-        <h3 class="mt-1 font-sans text-1xl uppercase"> {{ post.title }} </h3>
-        <p class="font-sans text-sm">{{post.description}} </p>
-        <span href="{{post.url}}" class="uppercase text-1xl font-serif font-light border-b-2 border-black inline-block mb-2"> {{page.link-text}} </span> 
-        <p class="uppercase text-zinc-600 text-xs tracking-wide">
-          {% for item in post.categories %}
-              <span class="tag mr-2"> {{item}} </span>
-          {% endfor %}
-        </p>
-
+        <p class="uppercase text-zinc-600 text-xs tracking-wide mb-2">
+            {% for item in post.categories %}
+                <span class="tag mr-2"> {{item}} </span>
+            {% endfor %}
+          </p>
+        <h3 class="mt-1 font-sans text-1xl uppercase mb-2"> {{ post.title }} </h3>
+        <p class="font-sans text-xs normal-case mb-2">{{post.description}} </p>
+        <span href="{{post.url}}" class="uppercase text-1xl font-serif font-light border-b-2 border-black inline-block mb-2"> Read more </span> 
     </div>
 </a>

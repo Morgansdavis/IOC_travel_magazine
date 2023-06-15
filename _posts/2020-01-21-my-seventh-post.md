@@ -4,6 +4,13 @@ title: My seventh post
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
   ab, eum dolore perspiciatis tenetur alias aspernatur
+background-position: bg-center
+banner-height: min-h-80
+text-position: items-center
+text-color: text-white
+banner-image: /uploads/travel/travel-4.jpg 
+heading: Exploring Sumbawa.
+sub-heading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
 author: Lucy
 featured: true
 categories:
@@ -16,17 +23,21 @@ seo:
   social_image:
   keywords:
   hide-from-google: false
+_comments:
+  title: Max 70 characters
+  social_image: landscape 1200 x 600px
+  page_blocks: These will only apply when you select the modular layout
 ---
-## Adventures in Bali
+## This is a heading in our blog post 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
+This  is a paragraph in our blog post lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus debitis esse cum neque laborum iure sed architecto adipisci maxime quo minus blanditiis exercitationem, sit incidunt dolor similique animi porro.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
+<img class="aspect-landscape" src="/uploads/travel/travel-6.jpg">
 
-![](/uploads/travel/travel-1.jpg){: .one-third-image width="3182" height="3181"}![](/uploads/travel/travel-1.jpg){: .one-third-image width="3182" height="3181"}![](/uploads/travel/travel-1.jpg){: .one-third-image width="3182" height="3181"}
+This  is a paragraph in our blog post lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus debitis esse cum neque laborum iure sed architecto adipisci maxime quo minus blanditiis exercitationem, sit incidunt dolor similique animi porro.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
+This  is a paragraph in our blog post lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus debitis esse cum neque laborum iure sed architecto adipisci maxime quo minus blanditiis exercitationem, sit incidunt dolor similique animi porro.
 
-![](/uploads/travel/travel-1.jpg){: .float-left-image width="3182" height="3181"}Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
+> lorem cum neque laborum iure sed architecto adipisci maxime quo minus blanditiis exercitationem.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur impedit fugiat quos esse accusamus nesciunt accusantium labore provident hic ex est?
+<img class="landscape" src="/uploads/travel/travel-6.jpg">

@@ -2,6 +2,13 @@
 layout: post
 title: Let's go sailing
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum, ab, eum dolore perspiciatis tenetur alias aspernatur
+background-position: bg-center
+banner-height: min-h-80
+text-position: items-center
+text-color: text-white
+banner-image: /uploads/travel/travel-4.jpg 
+heading: Exploring Sumbawa.
+sub-heading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
 author: Tina
 featured: true
 categories: [life, self care]
@@ -12,12 +19,21 @@ seo:
     social_image: 
     keywords: 
     hide-from-google: false
+_comments:
+  title: Max 70 characters
+  social_image: landscape 1200 x 600px
+  page_blocks: These will only apply when you select the modular layout
 ---
+## This is a heading in our blog post 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This  is a paragraph in our blog post lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus debitis esse cum neque laborum iure sed architecto adipisci maxime quo minus blanditiis exercitationem, sit incidunt dolor similique animi porro.
 
-<img src="/uploads/travel/travel-8.jpg" class="one-half-image"><img src="/uploads/travel/travel-8.jpg" class="one-half-image">
+<img class="aspect-landscape" src="/uploads/travel/travel-6.jpg">
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+This  is a paragraph in our blog post lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus debitis esse cum neque laborum iure sed architecto adipisci maxime quo minus blanditiis exercitationem, sit incidunt dolor similique animi porro.
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+This  is a paragraph in our blog post lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium doloribus debitis esse cum neque laborum iure sed architecto adipisci maxime quo minus blanditiis exercitationem, sit incidunt dolor similique animi porro.
+
+> lorem cum neque laborum iure sed architecto adipisci maxime quo minus blanditiis exercitationem.
+
+<img class="landscape" src="/uploads/travel/travel-6.jpg">
