@@ -49,32 +49,13 @@ layout: default
 		<a href="{{ page.product-url }}" class="button inline-block bg-black text-white p-3"> Buy Now </a>
 	</div>
 	<div class="relative">
-		<img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured-image }}" alt="{{product.title}}">
+		<img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured-image }}" alt=" {{product.title}}">
 	</div>
 </section>
 
-<!---------------- Before & After ------------>
+<!---------------- Before & After REAL  ------------>
 
-<section class="grid grid-cols-3 p-5p">
-	
-	<div class="col-span-2 mb-5"> 
-		<div class="aspect-landscape mb-2" style="background-image: url('{{page.featured-image}}')"></div>
-		<div class="grid grid-cols-6 gap-2"> 
-			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
-			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
-			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
-			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
-			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
-			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
-		</div>
-	</div>
-
-	<div class=" col-span-1 px-10p pt-[40%] mb-5">
-		<h2 class="mb-4"> Before & After </h2>
-		<p class="mb-4"> {{ page.change-description }} </p>
-	</div>
-
-</section>
+{% include before-and-after-slider.html %}
 
 <!---------------- how it works section ------------>
 
@@ -84,3 +65,17 @@ layout: default
 
 {% include faqs.html %}
 
+<!---------------- Product section ------------>
+
+<section class="p-5p  bg-stone-200 ">
+	<h2 class="max-w-screen-xl mx-auto text-center mb-5"> related products </h2>
+  
+	<div class="max-w-screen-xl mx-auto md:columns-3">
+  
+
+		{% for product in site.products-presets limit: 3 %}
+		{% include product-loop-item-square.html %}
+		{% endfor %}
+  
+	</div>
+  </section> 

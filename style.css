@@ -10,20 +10,19 @@
 /* ----------- CSS RESET --------- */
 
 @layer base {
+    
+    body h1, body h2, body h3, body h4, body h5, body p{
+        @apply mb-4
+    }
 
-    div {
-        background-size: cover;
-        background-position: center;
+    ul {
+        @apply list-disc list-inside ml-6
     }
 
     body {
-        @apply bg-stone-300; 
-        font-weight: 300;
+        @apply bg-stone-300
     }
 
-    body h1, body h2, body h3, body h4, body h5, body p,{
-        @apply mb-4;
-    }
 
     h2 {
         @apply text-xl md:text-4xl uppercase font-serif;
@@ -50,6 +49,11 @@
 
 
 } /* end layer base */
+
+    /* div {
+        background-size: cover;
+        background-position: center;
+    } */
 
 
 /* Custom CSS */

@@ -1,22 +1,26 @@
-<footer class="p-5p bg-stone-600 text-white">
+<footer> 
   <div class="max-w-screen-xl mx-auto md:grid grid-cols-3">
       <div class="p-4">
-        <a href="#" class="font-serif text-4xl mb-4 block"> Logo </a>
+        <a href="#" class="font-serif text-4xl mb-4 block tracking-wide"> LOGO </a>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit sint dignissimos magni vitae. </p>
       </div> 
+
       <nav class="p-4">
-        <h2 class="p-1 tracking-wide"> MORE FROM VOGUE </h2>
-        <a href="/blog-archive-list" class="p-1 block uppercase text-sm tracking-wide"> Blog Archive List </a>
-        <a href="/blog-archive" class="p-1 block uppercase text-sm tracking-wide"> Blog Archive </a>
-        <a href="#" class="p-1 block uppercase text-sm tracking-wide"> Link Three </a>
-        <a href="#" class="p-1 block uppercase text-sm tracking-wide"> Link Four </a>
+        <h2 class="p-1 font-serif tracking-wide uppercase"> Explore </h2>
+        <a href="/about"> About </a>
+        <a href="/blog"> Blog </a>
+        <a href="/shop"> Shop </a>
+        <a href="members"> Members </a>
+        <a href="members"> Contact </a>
       </nav> 
+
       <nav class="p-4">
-        <h2 class="p-1 tracking-wide"> CONNECT WITH US </h2>
-        <a href="#" class="p-1 block uppercase text-sm tracking-wide"> Instagram</a>
-        <a href="#" class="p-1 block uppercase text-sm tracking-wide"> Facebook </a>
-        <a href="#" class="p-1 block uppercase text-sm tracking-wide"> LinkedIn </a>
-        <a href="#" class="p-1 block uppercase text-sm tracking-wide"> TikTok </a>
+        <h2 class="p-1 font-serif tracking-wide uppercase"> Categories </h2>
+        
+        {% for category in site.categories %}
+        	<a href="{{category.url}}"> {{category.category}} </a>
+        {% endfor %}
+        
       </nav> 
     </div>
   </footer>
