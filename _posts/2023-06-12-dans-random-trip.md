@@ -4,6 +4,12 @@ title: Dans random trip
 description: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sunt earum,
   ab, eum dolore perspiciatis tenetur alias aspernatur
+author: 'dan'
+featured: true
+categories:
+  - travel
+  - life
+featured_image: /uploads/travel/travel-6.jpg
 background-position: bg-center
 banner-height: min-h-80
 text-position: items-center
@@ -11,12 +17,6 @@ text-color: text-white
 banner-image: /uploads/travel/travel-4.jpg 
 heading: Exploring Sumbawa.
 sub-heading: Nature teaches you to appreciate the finer things in life, to be present, live in the moment and just breath.
-author: 'dan'
-featured: true
-categories:
-  - travel
-  - life
-featured_image: /uploads/travel/travel-6.jpg
 seo:
   title:
   description:

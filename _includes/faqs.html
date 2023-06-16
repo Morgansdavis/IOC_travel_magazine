@@ -1,0 +1,17 @@
+<section class="p-5p">
+    <h2 class="pb-8"> FAQ's </h2>
+    <div>
+        <hr class="border-1 border-black">
+        {% for item in site.data.questions %}
+        <div class="py-3 flex justify-between">
+            <h3 class="font-bold"> {{item.question}} </h3>
+            <i class="iconoir-nav-arrow-right"></i> 
+        </div>
+        <div>
+            <p> {{item.answer}} </p>
+        </div>
+        <hr class="border-1 border-black">
+        {% endfor %}
+    </div>
+
+</section>

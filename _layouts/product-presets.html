@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+<!--------- <section class="p-8"> 
+	Product:  {{page.title}} 
+	Price: {{page.price }}
+	Before: <img src="{{page.before-image}}">
+	After: <img src="{{page.after-image}}">
+</section>
+
+<!--------
+	(DONE) Header: Product overview 
+	
+		two column section 
+		text on the left right with variables: product name, product subtitle, product description, and product purchase url. button is hardcoded
+		image on the right 
+
+	section 2: Before & After
+
+		three column section
+		image on the left with a two column section image gallery that is one full span column with a nested grid of six columns. variable of a before/after images in an array with a note of max of 6 images
+		text on the right of a one column with a hardcoded B&A header and a variable for the before and after description 
+	
+	section 3: How it works 
+
+		three column section
+		text on the left of a one column with a hardcoded B&A header and list of instructions
+		video on the right of a two column with a hardcoded video and cover images
+	
+	Section 4: FAQ's
+
+		hardcoded header
+		a data file with the questions 
+		and the structure built
+	
+	Section 5: related posts
+
+		same as the post loop item square but pulling from the presets, adding the price and making the whole thing a clickable url 
+
+------>
+
+<!------------- Product overview ------------>
+<section class="grid grid-cols-2 mb-6">
+	<div class="px-10p pt-[40%]">
+		<h2 class="mb-4"> {{ page.title }} </h2>
+		<h3 class="mb-4"> {{ page.subtitle }} </h3>
+		<p class="mb-4"> {{ page.description }} </p>
+		<a href="{{ page.product-url }}" class="button inline-block bg-black text-white p-3"> Buy Now </a>
+	</div>
+	<div class="relative">
+		<img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured-image }}" alt="{{product.title}}">
+	</div>
+</section>
+
+<!---------------- Before & After ------------>
+
+<section class="grid grid-cols-3 p-5p">
+	
+	<div class="col-span-2 mb-5"> 
+		<div class="aspect-landscape mb-2" style="background-image: url('{{page.featured-image}}')"></div>
+		<div class="grid grid-cols-6 gap-2"> 
+			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
+			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
+			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
+			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
+			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
+			<div class="relative aspect-square"> <img class="absolute inset-0 object-cover h-full w-full " src=" {{ page.featured-image }}"></div>
+		</div>
+	</div>
+
+	<div class=" col-span-1 px-10p pt-[40%] mb-5">
+		<h2 class="mb-4"> Before & After </h2>
+		<p class="mb-4"> {{ page.change-description }} </p>
+	</div>
+
+</section>
+
+<!---------------- how it works section ------------>
+
+{% include how-to-use.html %}
+
+<!---------------- FAQs section ------------>
+
+{% include faqs.html %}
+
