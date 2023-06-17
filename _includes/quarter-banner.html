@@ -1,9 +1,9 @@
 <!--  image banner block  -->
 <section class="bg-stone-300 grid grid-cols-5 {{page.banner-height}} {{page.text-color}}">
-    <div class="col-span-1"><!-- intentionally empty --></div>
+    <div class="hidden md:block md:col-span-1"><!-- intentionally empty --></div>
 
-    <div class="col-span-4 bg-cover p-5p flex {{page.background-position}} {{page.text-position}}" style="background-image: url('{{page.banner-image}}')">
-        <div class="-ml-[25%]"> 
+    <div class="col-span-5 md:col-span-4 bg-cover p-5p flex {{page.background-position}} {{page.text-position}}" style="background-image: url('{{page.banner-image}}')">
+        <div class="md:-ml-[25%]"> 
         <h2 class="text-4xl text-[10vw] max-w-[900px] leading-[.9] font-light text-left mb-3"> {{page.heading}} </h2> 
         <h3 class="text-xl max-w-[500px] font-light text-left mb-3 uppercase"> {{page.sub-heading}} </h3> 
 

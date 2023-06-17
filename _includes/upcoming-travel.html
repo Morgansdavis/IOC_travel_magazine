@@ -1,22 +1,19 @@
-<section class="p-5p bg-stone-400">
-    <h2 class="pb-8 text-center"> Past Travel Destinations </h2>
-    <div class="grid md:grid-cols-5">
-        <div class="col-span-3 p-4">
-            <div>
-                <hr class="border-1 border-black">
-                {% for item in site.data.destinations %}
-                <div class="py-3 flex justify-between">
-                    <h3> {{item.country}} </h3>
-                    <h3> {{item.dates}} </h3>
-                </div>
-                <hr class="border-1 border-black">
-                {% endfor %}
-            </div>
-        </div>
-        <div class="col-span-2 bg-cover relative" style="background-image: url('/uploads/travel/travel-6.jpg');">
-            <h3 class="max-md:hidden absolute top-2/3 left-0 max-w-xs p-4 bg-stone-400"> Currently in... </h3>
-        </div>
 
+<div class="grid md:grid-cols-5">
+    <div class="col-span-3 p-4">
+        <div>
+            <hr class="border-1 border-black">
+            {% for item in site.data.destinations %}
+            <div class="py-3 flex justify-between items-center">
+                <h3 class="mb-0"> {{item.country}} </h3>
+                <h3 class="mb-0"> {{item.dates}} </h3>
+            </div>
+            <hr class="border-1 border-black">
+            {% endfor %}
+        </div>
+    </div>
+    <div class="col-span-2 bg-cover relative" style="background-image: url('/uploads/travel/travel-6.jpg');">
+        <h3 class="max-md:hidden absolute top-2/3 left-0 max-w-xs p-4 bg-stone-400"> Currently in... </h3>
     </div>
 
-</section>
+</div>

@@ -29,7 +29,7 @@ seo:
   <div class="grid grid-cols md:grid-cols-4 ">
     <div class="col-span-1 md:col-span-2 bg-cover pb-[125%]" style="background-image: url('/uploads/travel/travel-4.jpg')"></div>
     <div class="col-span-1 md:col-span-2  py-[10%] px-5p">
-      <h2 class="normal-case bg-stone-300 text-center max-w-md p-8 text-5xl md:-ml-[40%] mb-12"> A fascinating heading about the site. </h2>
+      <h2 class="normal-case bg-stone-300 text-center max-w-md p-8 text-5xl md:-ml-[40%] md:mb-12"> A fascinating heading about the site. </h2>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptates sint odio sed sunt maxime doloremque aliquam dolores debitis minus iure cumque nobis incidunt culpa quia doloribus earum voluptas provident!</p>
       <p> Nostrum, voluptates sint odio sed sunt maxime doloremque aliquam dolores debitis minus iure cumque nobis incidunt culpa quia doloribus earum voluptas provident! </p>
       <a href="#" class="mt-8 inline-block border-b-2 border-black text-2xl"> Read More </a>
@@ -41,13 +41,13 @@ seo:
 
 <section class="p-[10%] bg-stone-100">
   <div class="grid grid-cols md:grid-cols-4 ">
-    <div class="col-span-1 md:col-span-2  py-[10%] px-5p">
+    <div class="col-span-1 md:col-span-2 order-2 py-[10%] px-5p">
       <h2 class="normal-case max-w-md text-5xl mb-12"> A fascinating heading about the site. </h2>
       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptates sint odio sed sunt maxime doloremque aliquam dolores debitis minus iure cumque nobis incidunt culpa quia doloribus earum voluptas provident!</p>
       <p> Nostrum, voluptates sint odio sed sunt maxime doloremque aliquam dolores debitis minus iure cumque nobis incidunt culpa quia doloribus earum voluptas provident! </p>
       <a href="#" class="mt-8 inline-block border-b-2 border-black text-2xl"> Read More </a>
     </div>
-    <div class="col-span-1 md:col-span-2 bg-cover pb-[125%]" style="background-image: url('/uploads/travel/travel-7.jpg')"></div>
+    <div class="col-span-1 order-1 md:order-3 md:col-span-2 bg-cover pb-[125%]" style="background-image: url('/uploads/travel/travel-7.jpg')"></div>
   </div>
 
 
@@ -55,8 +55,10 @@ seo:
 
 
 <!------------------------ Upcoming Travel  ------------------------>
-
-{% include upcoming-travel.html %}
+<section class="p-5p bg-stone-400">
+  <h2 class="pb-8 text-center"> Past Travel Destinations </h2>
+  {% include upcoming-travel.html %}
+</section>
 
 
 <!------------------------ Featured blog loop ------------------------>

@@ -896,6 +896,12 @@ a {
 .top-2\/3 {
   top: 66.666667%;
 }
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -908,8 +914,8 @@ a {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
-.col-span-4 {
-  grid-column: span 4 / span 4;
+.col-span-5 {
+  grid-column: span 5 / span 5;
 }
 .col-span-full {
   grid-column: 1 / -1;
@@ -917,9 +923,6 @@ a {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-.-ml-\[25\%\] {
-  margin-left: -25%;
 }
 .mb-0 {
   margin-bottom: 0px;
@@ -971,6 +974,9 @@ a {
 }
 .contents {
   display: contents;
+}
+.hidden {
+  display: none;
 }
 .aspect-\[5\/3\] {
   aspect-ratio: 5/3;
@@ -1315,17 +1321,35 @@ a {
 }
 
 @media (min-width: 768px) {
+  .md\:order-3 {
+    order: 3;
+  }
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
   .md\:col-span-9 {
     grid-column: span 9 / span 9;
   }
+  .md\:-ml-\[25\%\] {
+    margin-left: -25%;
+  }
   .md\:-ml-\[40\%\] {
     margin-left: -40%;
+  }
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+  .md\:block {
+    display: block;
   }
   .md\:grid {
     display: grid;
