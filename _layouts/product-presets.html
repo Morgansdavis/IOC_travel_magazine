@@ -63,14 +63,20 @@ layout: default
 
 <!---------------- FAQs section ------------>
 
-{% include faqs.html %}
-
+<section class="p-5p bg-stone-200">
+    <div class="max-w-screen-xl mx-auto">
+	<h2 class="pb-8"> FAQ's </h2>
+	{% include faqs.html 
+		faqs-source=site.data.preset-questions 
+	%}
+	</div>
+</section>
 <!---------------- Product section ------------>
 
 <section class="p-5p  bg-stone-200 ">
 	<h2 class="max-w-screen-xl mx-auto text-center mb-5"> related products </h2>
   
-	<div class="max-w-screen-xl mx-auto md:columns-3">
+	<div class="max-w-screen-xl mx-auto grid sm:grid-cols-3">
   
 
 		{% for product in site.products-presets limit: 3 %}

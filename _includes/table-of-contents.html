@@ -1,0 +1,11 @@
+
+<div>
+    <hr class="border-1 border-black">
+    {% for item in page.table-of-contents %}
+    <div class="py-3 flex justify-between">
+        <h3> {{item.place}} </h3>
+        <h3> {{item.section}} </h3>
+    </div>
+    <hr class="border-1 border-black">
+    {% endfor %}
+</div>
