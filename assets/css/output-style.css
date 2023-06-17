@@ -1307,7 +1307,6 @@ a {
 }
 
 #memberspace-login-form input{
-    background-color: #d6d3d1;
     border-color: #000;
     border: 0;
     border-bottom: 2px solid black;
@@ -1315,7 +1314,8 @@ a {
     }
 
 #memberspace-login-form label {
-    border: 2px solid yellow;
+    font-family: sans-serif;
+    text-transform: uppercase;
 }
 
 /* Forgot Email / forgot password text */
