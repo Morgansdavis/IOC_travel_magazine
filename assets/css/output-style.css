@@ -1290,6 +1290,11 @@ a {
   transition-duration: 700ms;
 }
 
+/* ------- typography 
+      sans: ['Montserrat', 'sans-serif'],
+      serif: ['Italiana', 'serif'],
+
+/* 
 
 /* ----------- CSS RESET --------- */ /* end layer base */
 
@@ -1314,7 +1319,7 @@ a {
     }
 
 #memberspace-login-form label {
-    font-family: sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     text-transform: uppercase;
 }
 
