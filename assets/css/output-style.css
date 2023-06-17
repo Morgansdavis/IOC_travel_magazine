@@ -1316,12 +1316,14 @@ a {
     border: 0;
     border-bottom: 2px solid black;
     border-radius: 0;
+    background-color: #d6d3d1;
     }
 
 #memberspace-login-form label {
     font-family: 'Montserrat', 'sans-serif';
     text-transform: uppercase;
-}.MemberSpaceWidgetInternal__TextInput_input:not(#MemberSpaceWidgetInternal__TextInput_-).MemberSpaceWidgetInternal__TextInput_variant-primary{}
+    font-weight: 400;
+}
 
 /* Forgot Email / forgot password text */
 #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
