@@ -1302,13 +1302,18 @@ a {
 
 /* Custom CSS */
 
-@media not all and (min-width: 768px) {
+  ms-widget-ui {
+    display: flex;
+    justify-content: left;
+}
+
+  @media not all and (min-width: 768px) {
   .max-md\:hidden {
     display: none;
   }
 }
 
-@media (min-width: 640px) {
+  @media (min-width: 640px) {
   .sm\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -1320,7 +1325,7 @@ a {
   }
 }
 
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
   .md\:order-3 {
     order: 3;
   }
