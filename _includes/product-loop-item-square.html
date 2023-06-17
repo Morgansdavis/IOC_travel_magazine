@@ -1,6 +1,7 @@
 <a class="product-item p-2 break-inside-avoid block mb-4 {{include.type}}" href="{{ product.url }}">
-    <div class="aspect-square bg-cover" 
-    style="background-image:url( '{{ product.featured-image }}' );"></div>
+    <div class="aspect-square bg-[url('{{ product.hover-image }}')] bg-cover bg-center relative" >
+        <img src="{{ product.featured-image }}" alt="{{product.title}}" class="transition-opacity absolute inset-0 w-full h-full object-cover object-center">
+    </div>
     <div class="p-4 relative bg-stone-400">
         <p class="uppercase text-xs tracking-wide mb-2">
             {% for item in product.categories %}
