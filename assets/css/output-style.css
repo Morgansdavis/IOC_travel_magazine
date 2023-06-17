@@ -939,9 +939,6 @@ a {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -996,14 +993,14 @@ a {
 .min-h-60 {
   min-height: 60vh;
 }
+.min-h-70 {
+  min-height: 70vh;
+}
 .min-h-80 {
   min-height: 80vh;
 }
 .min-h-90 {
   min-height: 90vh;
-}
-.min-h-70 {
-  min-height: 70vh;
 }
 .w-1\/2 {
   width: 50%;
@@ -1016,6 +1013,9 @@ a {
 }
 .max-w-\[900px\] {
   max-width: 900px;
+}
+.max-w-lg {
+  max-width: 32rem;
 }
 .max-w-md {
   max-width: 28rem;
@@ -1034,9 +1034,6 @@ a {
 }
 .max-w-xs {
   max-width: 20rem;
-}
-.max-w-lg {
-  max-width: 32rem;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -1100,10 +1097,6 @@ a {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
 .bg-dark {
   background-color: rgb(63 63 70);;
 }
@@ -1122,6 +1115,10 @@ a {
 .bg-stone-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(168 162 158 / var(--tw-bg-opacity));
+}
+.bg-stone-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(120 113 108 / var(--tw-bg-opacity));
 }
 .bg-\[length\:70vw\] {
   background-size: 70vw;
@@ -1148,9 +1145,6 @@ a {
 }
 .p-2 {
   padding: 0.5rem;
-}
-.p-3 {
-  padding: 0.75rem;
 }
 .p-4 {
   padding: 1rem;
