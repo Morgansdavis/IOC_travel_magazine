@@ -78,7 +78,7 @@
     justify-content: left;
 }
 
-#memberspace-login-form input{
+#memberspace-login-form:not(#MemberSpaceWidgetInternal__TextInput_-) input {
     border-color: #000;
     border: 0;
     border-bottom: 2px solid black;
@@ -88,7 +88,7 @@
 #memberspace-login-form label {
     font-family: 'Montserrat', 'sans-serif';
     text-transform: uppercase;
-}
+}.MemberSpaceWidgetInternal__TextInput_input:not(#MemberSpaceWidgetInternal__TextInput_-).MemberSpaceWidgetInternal__TextInput_variant-primary{}
 
 /* Forgot Email / forgot password text */
 #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
