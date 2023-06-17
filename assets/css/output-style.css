@@ -1301,18 +1301,38 @@ a {
 
 /* Custom CSS */
 
-body ms-widget-ui {
+#memberspace-login-form ms-widget-ui {
     display: flex;
     justify-content: left;
 }
 
-.MemberSpaceWidgetInternal__TextInput_input:not(#MemberSpaceWidgetInternal__TextInput_-).MemberSpaceWidgetInternal__TextInput_variant-primary {
+#memberspace-login-form input{
     background-color: #d6d3d1;
     border-color: #000;
     border: 0;
     border-bottom: 2px solid black;
     border-radius: 0;
     }
+
+#memberspace-login-form label {
+    border: 2px solid yellow;
+}
+
+/* Forgot Email / forgot password text */
+#memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
+    color: green;
+}
+
+
+#memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+    color: red;
+}
+
+#memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
+    color: blue;
+}
+
+.MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
 
 @media not all and (min-width: 768px) {
   .max-md\:hidden {
