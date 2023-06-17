@@ -1311,7 +1311,7 @@ a {
     justify-content: left;
 }
 
-#memberspace-login-form:not(#MemberSpaceWidgetInternal__TextInput_-) input {
+#memberspace-section #memberspace-login-form input {
     border-color: #000;
     border: 0;
     border-bottom: 2px solid black;

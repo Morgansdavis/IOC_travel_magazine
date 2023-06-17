@@ -86,7 +86,7 @@
     background-color: #d6d3d1;
     }
 
-#memberspace-login-form label {
+#memberspace-section #memberspace-login-form label {
     font-family: 'Montserrat', 'sans-serif';
     text-transform: uppercase;
     font-weight: 400;
