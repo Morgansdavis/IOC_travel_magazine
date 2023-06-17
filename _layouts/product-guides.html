@@ -3,15 +3,17 @@ layout: default
 ---
 
 <!------------- Product overview ------------>
-<section class="grid grid-cols-2 mb-6">
-	<div class="px-10p pt-[40%]">
-		<h2 class="mb-4"> {{ page.title }} </h2>
-		<h3 class="mb-4"> {{ page.subtitle }} </h3>
-		<p class="mb-4"> {{ page.description }} </p>
-		<a href="{{ page.product-url }}" class="button inline-block bg-black text-white p-3"> Buy Now </a>
-	</div>
-	<div class="relative">
-		<img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured-image }}" alt=" {{product.title}}">
+<section class="max-w-screen-xl mx-auto">
+	<div class="grid grid-cols-2 gap-4 min-h-70">
+		<div class="px-10p pt-[40%] self-end max-w-lg">
+			<h2 class="mb-4"> {{ page.title }} </h2>
+			<h3 class="mb-4"> {{ page.subtitle }} </h3>
+			<p class="mb-4"> {{ page.description }} </p>
+			 {% include buy-button.html buy-button-id=page.buy-button-id %}
+		</div>
+		<div class="relative">
+			<img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured-image }}" alt=" {{product.title}}">
+		</div>
 	</div>
 </section>
 
@@ -39,7 +41,6 @@ layout: default
 	<div class=" col-span-1 mb-5">
         <h2 class="mb-4"> What's Included </h2>
         <div class="mb-4"> {{ page.whats-included_html }} </div>
-		<a href="{{ page.product-url }}" class="button inline-block bg-black text-white p-3"> Add to Cart </a>
 	</div>
 	</div>
 
