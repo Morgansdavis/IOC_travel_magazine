@@ -67,3 +67,8 @@
         @apply uppercase text-zinc-600 text-xs tracking-wide;
     }
   }
+
+  ms-widget-ui {
+    display: flex;
+    justify-content: left;
+}
