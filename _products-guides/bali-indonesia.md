@@ -9,6 +9,7 @@ categories:
   - travel-guide
 price: $25
 featured-image: /uploads/travel/travel-3.jpg
+hover-image: /uploads/travel/travel-6.jpg
 gallery:
     - image: /uploads/travel/travel-1.jpg
     - image: /uploads/travel/travel-2.jpg

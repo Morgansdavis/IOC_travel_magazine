@@ -9,6 +9,7 @@ categories:
   - presets
 price: $25
 featured-image: /uploads/travel/travel-5.jpg
+hover-image: /uploads/travel/travel-6.jpg
 comparison-images:
     - before-image: /uploads/travel/travel-1.jpg
       after-image: /uploads/travel/travel-2.jpg
