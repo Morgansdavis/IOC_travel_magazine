@@ -914,9 +914,6 @@ a {
 .col-span-full {
   grid-column: 1 / -1;
 }
-.m-4 {
-  margin: 1rem;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1032,8 +1029,8 @@ a {
 .max-w-xs {
   max-width: 20rem;
 }
-.max-w-xl {
-  max-width: 36rem;
+.max-w-\[400px\] {
+  max-width: 400px;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -1068,6 +1065,12 @@ a {
 }
 .justify-between {
   justify-content: space-between;
+}
+.justify-items-start {
+  justify-items: start;
+}
+.justify-items-center {
+  justify-items: center;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -1158,6 +1161,18 @@ a {
 .p-\[10\%\] {
   padding: 10%;
 }
+.p-\[40vh\] {
+  padding: 40vh;
+}
+.p-\[60vh\] {
+  padding: 60vh;
+}
+.p-\[30vh\] {
+  padding: 30vh;
+}
+.p-\[30h\] {
+  padding: 30h;
+}
 .px-10p {
   padding-left: 10%;
   padding-right: 10%;
@@ -1187,6 +1202,9 @@ a {
 .pb-\[125\%\] {
   padding-bottom: 125%;
 }
+.pr-12 {
+  padding-right: 3rem;
+}
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -1195,18 +1213,6 @@ a {
 }
 .pt-\[40\%\] {
   padding-top: 40%;
-}
-.pr-4 {
-  padding-right: 1rem;
-}
-.pr-8 {
-  padding-right: 2rem;
-}
-.pr-10 {
-  padding-right: 2.5rem;
-}
-.pr-12 {
-  padding-right: 3rem;
 }
 .text-left {
   text-align: left;
@@ -1239,6 +1245,10 @@ a {
 .text-\[10vw\] {
   font-size: 10vw;
 }
+.text-base {
+  font-size: 1rem;
+  line-height: 1.2;
+}
 .text-sm {
   font-size: 0.875rem;;
   line-height: 1.2;
@@ -1249,10 +1259,6 @@ a {
 }
 .text-xs {
   font-size: 0.75rem;
-  line-height: 1.2;
-}
-.text-base {
-  font-size: 1rem;
   line-height: 1.2;
 }
 .font-light {
