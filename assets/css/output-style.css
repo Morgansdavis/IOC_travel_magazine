@@ -1301,7 +1301,7 @@ a {
 
 /* Custom CSS */
 
-ms-widget-ui {
+body ms-widget-ui {
     display: flex;
     justify-content: left;
 }
