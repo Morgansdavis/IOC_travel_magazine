@@ -1122,10 +1122,6 @@ a {
   --tw-bg-opacity: 1;
   background-color: rgb(168 162 158 / var(--tw-bg-opacity));
 }
-.bg-stone-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(120 113 108 / var(--tw-bg-opacity));
-}
 .bg-\[length\:70vw\] {
   background-size: 70vw;
 }
@@ -1149,6 +1145,9 @@ a {
 .p-1 {
   padding: 0.25rem;
 }
+.p-10p {
+  padding: 10%;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -1162,12 +1161,6 @@ a {
   padding: 2rem;
 }
 .p-\[10\%\] {
-  padding: 10%;
-}
-.p-12 {
-  padding: 3rem;
-}
-.p-10p {
   padding: 10%;
 }
 .px-10p {
@@ -1308,18 +1301,26 @@ a {
 
 /* Custom CSS */
 
-  ms-widget-ui {
+ms-widget-ui {
     display: flex;
     justify-content: left;
 }
 
-  @media not all and (min-width: 768px) {
+.MemberSpaceWidgetInternal__TextInput_input:not(#MemberSpaceWidgetInternal__TextInput_-).MemberSpaceWidgetInternal__TextInput_variant-primary {
+    background-color: #d6d3d1;
+    border-color: #000;
+    border: 0;
+    border-bottom: 2px solid black;
+    border-radius: 0;
+    }
+
+@media not all and (min-width: 768px) {
   .max-md\:hidden {
     display: none;
   }
 }
 
-  @media (min-width: 640px) {
+@media (min-width: 640px) {
   .sm\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -1331,7 +1332,7 @@ a {
   }
 }
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
   .md\:order-3 {
     order: 3;
   }
