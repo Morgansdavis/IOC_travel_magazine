@@ -1164,6 +1164,9 @@ a {
 .p-\[10\%\] {
   padding: 10%;
 }
+.p-12 {
+  padding: 3rem;
+}
 .px-10p {
   padding-left: 10%;
   padding-right: 10%;
