@@ -6,6 +6,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ------- typography 
+      sans: ['Montserrat', 'sans-serif'],
+      serif: ['Italiana', 'serif'],
+
+/* 
 
 /* ----------- CSS RESET --------- */
 
@@ -81,7 +86,7 @@
     }
 
 #memberspace-login-form label {
-    font-family: sans-serif;
+    font-family: 'Montserrat', 'sans-serif';
     text-transform: uppercase;
 }
 
