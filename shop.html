@@ -15,30 +15,27 @@ sub-heading: nature teaches you to appreciate the finer things in life, to be pr
 {% include full-banner.html%}
 
 <!------- Travel Guide Section ---------->
-<section class="p-8 max-w-screen-xl mx-auto">
+<section class="p-5p">
+	<h2 class="max-w-screen-xl mx-auto text-center mb-5"> Travel Guides </h2>
 
-	<h2 class="text-center"> Travel guides </h2> 
+	<div class="max-w-screen-xl mx-auto grid sm:grid-cols-3">
+
+	{% for product in site.products-guides limit:6 %}
+
+			{% include product-loop-item-square.html %}
 	
-	<div class="grid grid-cols-3 gap-4">
-	
-		{% for product in site.products-guides %}
-		
-		<a href="{{product.url}}"> 
-			<img src="{{product.featured-image}}">
-			<h4> {{product.title}}</h4>
-			<p> {{product.price}}</p>
-        </a>
-	
-	{% endfor %}
-	
+	{% endfor  %}
+
 	</div>
+
+	<a href="/shop-all.html" class="button"> Shop All Products </a>
 	
 </section>
 
 <!------- image divider Section ---------->
 
 <section>
-	<div class="p-5p min-h-60 bg-cover bg-center flex items-center" style="background-image: url('uploads/travel/travel-7.jpg')">  
+	<div class="p-5p min-h-60 bg-cover bg-center flex items-center" style="background-image: url('/uploads/travel/travel-6.jpg')">  
 		<h3 class="text-4xl max-w-md text-white normal-case font-serif"> "Once you get a taste for travel, you'll never be the same." </h3>
 	</div>
 
@@ -49,22 +46,22 @@ sub-heading: nature teaches you to appreciate the finer things in life, to be pr
 
 <!------- Preset Section ---------->
 
-<section class="p-8 max-w-screen-xl mx-auto">
+<section class="p-5p">
+	<h2 class="max-w-screen-xl mx-auto text-center mb-5"> Travel Guides </h2>
 
-	<h2 class="text-center"> Presets </h2> 
+	<div class="max-w-screen-xl mx-auto grid sm:grid-cols-3">
+
+	{% for product in site.products-presets limit:6  %}
+
+			{% include product-loop-item-square.html %}
 	
-	<div class="grid grid-cols-3 gap-4">
-	
-		{% for product in site.products-presets %}
-		
-		<a href="{{product.url}}"> 
-			<img src="{{product.featured-image}}">
-			<h4> {{product.title}}</h4>
-			<p> {{product.price}}</p>
-        </a>
-	
-	{% endfor %}
-	
+	{% endfor  %}
+
 	</div>
+
+	<a href="/shop-all.html" class="button"> Shop All Products </a>
+	
 	
 </section>
+
+	

@@ -34,7 +34,7 @@
     }
 
     a {
-        @apply uppercase font-serif font-light;
+        @apply uppercase font-serif font-light text-sm tracking-wide p-1 block;
     }
 
     .blog-content h2, h3, h4, h5 {
@@ -70,6 +70,12 @@
     .tag {
 
         @apply uppercase text-zinc-600 text-xs tracking-wide;
+    }
+    .button{
+        @apply bg-stone-600 text-white px-4 py-2 m-1 inline-block;
+    }
+    .filter .active {
+        @apply  bg-stone-100 text-zinc-600
     }
   }
 

@@ -6,7 +6,8 @@ buy-button-id: 6132597457074
 subtitle: A short product subtitle
 description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus ratione adipisci molestiae obcaecati nobis atque sunt voluptas delectus accusantium repellendus culpa temporibus commodi, veniam consequuntur distinctio quaerat, eos est!
 categories: 
-  - travel guide
+  - australia
+type: travel-guide
 price: $25
 featured-image: /uploads/travel/travel-4.jpg
 hover-image: /uploads/travel/travel-6.jpg

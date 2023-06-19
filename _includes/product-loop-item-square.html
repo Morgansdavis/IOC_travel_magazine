@@ -1,4 +1,4 @@
-<a class="product-item p-2 break-inside-avoid block mb-4 {{include.type}}" href="{{ product.url }}">
+<!-- <a class="product-item p-2 break-inside-avoid block mb-4 {{include.type}}" href="{{ product.url }}">
     <div class="aspect-square bg-[url('{{ product.hover-image }}')] bg-cover bg-center relative" >
         <img src="{{ product.featured-image }}" alt="{{product.title}}" class="transition-opacity absolute inset-0 w-full h-full object-cover object-center">
     </div>
@@ -11,6 +11,25 @@
         <h3 class="mt-1 font-sans text-1xl uppercase mb-2"> {{ product.title }} </h3>
         <p class="font-sans text-xs normal-case mb-2">{{product.description}} </p>
         <span href="{{ product.url }}" class="uppercase text-1xl font-serif font-light border-b-2 border-black inline-block mb-2"> Read more </span> 
+
+    </div>
+</a> -->
+
+<a class="p-2 block {{include.type}}" href="{{ product.url }}">
+    <div class="aspect-square bg-[url('{{ product.hover-image }}')] bg-cover bg-center relative">
+        <img src="{{ product.featured-image }}" alt="{{product.title}}" class="hover:opacity-0 transition-opacity absolute inset-0 w-full h-full object-cover object-center">
+    </div>
+    <div class="p-8 relative bg-stone-100">
+
+         <p class="uppercase text-xs tracking-wide mb-2">
+            {% for item in product.categories %}
+                <span class="tag mr-2 text-stone-400"> {{item}} </span>
+            {% endfor %}
+        </p>
+        <span class="tag bg-stone-200 text-xs mb-2"> {{include.type}} </span>
+        <h2 class="font-serif text-2xl"> {{ product.title }} </h2>
+        <p class="line-clamp-3 tracking-wide mb-4 text-xs"> {{ product.description }}</p>
+        <p class="font-serif text-xl"> {{product.price}} </p>
 
     </div>
 </a>

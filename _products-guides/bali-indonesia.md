@@ -6,7 +6,8 @@ buy-button-id: 1686971064446
 subtitle: A short product subtitle
 description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure ducimus ratione adipisci molestiae obcaecati nobis atque sunt voluptas delectus accusantium repellendus culpa temporibus commodi, veniam consequuntur distinctio quaerat, eos est!
 categories: 
-  - travel-guide
+  - bali
+type: travel-guide
 price: $25
 featured-image: /uploads/travel/travel-3.jpg
 hover-image: /uploads/travel/travel-6.jpg
