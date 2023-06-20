@@ -12,12 +12,12 @@ sub-heading: nature teaches you to appreciate the finer things in life, to be pr
 ---
 <section class="p-5p max-w-screen-xl mx-auto" x-data="{ filter: 'all' }">
 
-	<h2 class="text-center text-4xl mb-4"> Shop all products </h2> 
+	<h2 class="text-center text-4xl mb-4 editable"> Shop all products </h2> 
 
 	<div class="filter"> 
-		<a href="#" class="button" :class="{'active':filter === 'all'}" @click.prevent="filter = 'all'">All</a>
-        <a href="#" class="button" :class="{'active':filter === 'travel-guide'}" @click.prevent="filter = 'travel-guide'">Travel Guides</a>
-        <a href="#" class="button" :class="{'active':filter === 'preset'}" @click.prevent="filter = 'preset'">Presets </a>
+		<a href="#" class="button editable" :class="{'active':filter === 'all'}" @click.prevent="filter = 'all'">All</a>
+        <a href="#" class="button editable" :class="{'active':filter === 'travel-guide'}" @click.prevent="filter = 'travel-guide'">Travel Guides</a>
+        <a href="#" class="button editable" :class="{'active':filter === 'preset'}" @click.prevent="filter = 'preset'">Presets </a>
 	</div>
 
 	<div class="grid grid-cols-3 gap-4">
