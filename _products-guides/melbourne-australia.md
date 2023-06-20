@@ -1,5 +1,5 @@
 ---
-layout: product-travel-guides
+layout: product-guides
 slug: melbourne-australia
 title: Melbourne Australia
 subtitle: Perfect for your summer down under

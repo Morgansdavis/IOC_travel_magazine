@@ -1,9 +1,9 @@
 <!--  image banner block  -->
-<section class="p-5p bg-cover {{page.background-position}} {{page.banner-height}} {{page.text-position}} {{page.text-color}} flex" style="background-image: url('{{page.banner-image}}')">
+<section class="p-5p bg-cover {{page.banner.background-position}} {{page.banner.banner-height}} {{page.banner.text-position}} {{page.banner.text-color}} flex" style="background-image: url('{{page.banner.banner-image}}')">
     <div class="ml-5">
-       <h4 class="text-base max-w-[500px] font-light uppercase"> {{page.shop-heading }} </h4>  
-       <h2 class="text-4xl text-[10vw] max-w-[900px] leading-[.9] font-light mb-3"> {{page.heading}}  </h2> 
-       <h3 class="text-xl max-w-[500px] font-light mb-3 uppercase"> {{page.sub-heading}} </h3> 
-       <a href="{{page.link-url}}" class="text-3xl max-w-[500px] font-light text-left uppercase border-b-2 border-black"> {{page.link-text}} </a> 
+       <div class="text-base max-w-xl font-light uppercase"> {{page.banner.shop-heading }} </div>  
+       <h1 class="text-4xl font-serif text-[10vw] max-w-2xl leading-[.9] font-light mb-3 uppercase"> {{page.banner.heading | default: page.title }}  </h1> 
+       <p class="text-xl max-w-xl font-light mb-3 uppercase"> {{page.banner.sub-heading | default: page.description}} </p> 
+       <a href="{{page.banner.link-url}}" class="text-3xl max-w-xl font-light text-left uppercase border-b-2 border-white"> {{page.banner.link-text}} </a> 
     </div> 
 </section> 

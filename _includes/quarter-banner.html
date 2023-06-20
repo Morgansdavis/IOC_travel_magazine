@@ -1,14 +1,14 @@
 <!--  image banner block  -->
-<section class="bg-stone-300 grid grid-cols-5 {{page.banner-height}} {{page.text-color}}">
+<section class="bg-stone-300 grid grid-cols-5 {{page.banner.banner-height}} {{page.banner.text-color}}">
     <div class="hidden md:block md:col-span-1"><!-- intentionally empty --></div>
 
-    <div class="col-span-5 md:col-span-4 bg-cover p-5p flex {{page.background-position}} {{page.text-position}}" style="background-image: url('{{page.banner-image}}')">
+    <div class="col-span-5 md:col-span-4 bg-cover p-5p flex {{page.banner.background-position}} {{page.banner.text-position}}" style="background-image: url('{{page.banner.banner-image}}')">
         <div class="md:-ml-[25%]"> 
-        <h2 class="text-4xl text-[10vw] max-w-[900px] leading-[.9] font-light text-left mb-3"> {{page.heading}} </h2> 
-        <h3 class="text-xl max-w-[500px] font-light text-left mb-3 uppercase"> {{page.sub-heading}} </h3> 
-
-        <a href="{{page.link-url}}" class="text-3xl inline-block font-light text-left uppercase border-b-2 border-black"> {{page.link-text}} </a> 
-        
+        <h2 class="text-4xl text-[10vw] max-w-[900px] leading-[.9] font-light text-left mb-3"> {{page.banner.heading}} </h2> 
+        <h3 class="text-xl max-w-[500px] font-light text-left mb-3 uppercase"> {{page.banner.sub-heading}} </h3> 
+        {% if page.banner.link-text and page.banner.link-url %}
+        <a href="{{page.banner.link-url}}" class="text-3xl inline-block font-light text-left uppercase border-b-2 border-white"> {{page.banner.link-text}} </a> 
+        {% endif %}
         </div> 
     </div>
 </section> 

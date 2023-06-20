@@ -1,5 +1,5 @@
 ---
-layout: product-travel-guides
+layout: product-guides
 slug: grand-canyon
 title: Grand Canyon
 subtitle: Perfect for your summer down under

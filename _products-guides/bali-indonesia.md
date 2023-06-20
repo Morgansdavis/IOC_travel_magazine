@@ -1,5 +1,5 @@
 ---
-layout: product-travel-guides
+layout: product-guides
 slug: bali-indonesia
 title: Bali Indonesia
 subtitle: Welcome to the island of the gods

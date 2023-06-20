@@ -904,6 +904,9 @@ a {
 .pointer-events-none {
   pointer-events: none;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -918,6 +921,9 @@ a {
 }
 .top-2\/3 {
   top: 66.666667%;
+}
+.top-\[50\%\] {
+  top: 50%;
 }
 .order-1 {
   order: 1;
@@ -1056,6 +1062,9 @@ a {
 .w-full {
   width: 100%;
 }
+.max-w-2xl {
+  max-width: 42rem;
+}
 .max-w-\[500px\] {
   max-width: 500px;
 }
@@ -1080,18 +1089,24 @@ a {
 .max-w-screen-xl {
   max-width: 1280px;
 }
+.max-w-xl {
+  max-width: 36rem;
+}
 .max-w-xs {
   max-width: 20rem;
 }
 .cursor-pointer {
   cursor: pointer;
 }
+.list-inside {
+  list-style-position: inside;
+}
+.list-disc {
+  list-style-type: disc;
+}
 .break-inside-avoid {
   -moz-column-break-inside: avoid;
        break-inside: avoid;
-}
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -1144,15 +1159,26 @@ a {
 .rounded-lg {
   border-radius: 0.5rem;
 }
+.border-b {
+  border-bottom-width: 1px;
+}
 .border-b-2 {
   border-bottom-width: 2px;
+}
+.border-t {
+  border-top-width: 1px;
 }
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
-.bg-dark {
-  background-color: rgb(63 63 70);;
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-zinc-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(39 39 42 / var(--tw-border-opacity));
 }
 .bg-stone-100 {
   --tw-bg-opacity: 1;
@@ -1170,8 +1196,24 @@ a {
   --tw-bg-opacity: 1;
   background-color: rgb(168 162 158 / var(--tw-bg-opacity));
 }
+.bg-zinc-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+.bg-\[url\(\'\/uploads\/guides\/guide-2\.png\'\)\] {
+  background-image: url('/uploads/guides/guide-2.png');
+}
+.bg-\[url\(\'\/uploads\/guides\/guide-3\.png\'\)\] {
+  background-image: url('/uploads/guides/guide-3.png');
+}
+.bg-\[url\(\'\/uploads\/travel\/travel-5\.jpg\'\)\] {
+  background-image: url('/uploads/travel/travel-5.jpg');
+}
 .bg-\[url\(\'\/uploads\/travel\/travel-6\.jpg\'\)\] {
   background-image: url('/uploads/travel/travel-6.jpg');
+}
+.bg-\[url\(\'\/uploads\/travel\/travel-7\.jpg\'\)\] {
+  background-image: url('/uploads/travel/travel-7.jpg');
 }
 .bg-\[length\:70vw\] {
   background-size: 70vw;
@@ -1320,16 +1362,13 @@ a {
 .tracking-wide {
   letter-spacing: 0.025em;
 }
-.text-light {
-  color: rgb(244 244 245);;
-}
-.text-stone-100 {
-  --tw-text-opacity: 1;
-  color: rgb(245 245 244 / var(--tw-text-opacity));
-}
 .text-stone-400 {
   --tw-text-opacity: 1;
   color: rgb(168 162 158 / var(--tw-text-opacity));
+}
+.text-stone-600 {
+  --tw-text-opacity: 1;
+  color: rgb(87 83 78 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -1406,6 +1445,16 @@ a {
 }
 
 .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
+
+.hover\:text-stone-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(120 113 108 / var(--tw-text-opacity));
+}
+
+.hover\:text-stone-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(87 83 78 / var(--tw-text-opacity));
+}
 
 .hover\:opacity-0:hover {
   opacity: 0;
