@@ -35,7 +35,8 @@ layout: default
 	<div class="grid grid-cols-3 p-5p max-w-screen-xl mx-auto"> 
 	<div class="col-span-2 pr-12">
 		<h2 class="mb-4"> Table of Contents </h2>
-		{% include table-of-contents.html %}
+		{% include accordion.html 
+            accordion-source=page.table-of-contents %}
 	</div>
 
 	<div class=" col-span-1 mb-5">
