@@ -2,10 +2,13 @@
 layout: product-presets
 slug: golden-hour
 title: Golden Hour
+buy-button-id: 6132599521458
 subtitle: Perfect for your summer in Europe
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, id quod corporis magni ipsam omnis labore sit commodi cum. Quos, consequatur accusantium? Ut corporis qui architecto. Labore nisi alias placeat.
 type: preset
-price: 25
+categories: 
+  - glow
+price: $25
 featured-image: /uploads/travel/travel-4.jpg
 hover-image: /uploads/travel/travel-5.jpg
 comparison-images: 
@@ -21,4 +24,5 @@ comparison-images:
       after-image: /uploads/presets/ocean-blues-after-5.jpg
     - before-image: /uploads/presets/ocean-blues-before-6.jpg
       after-image: /uploads/presets/ocean-blues-after-6.jpg
+change-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, id quod corporis magni ipsam omnis labore sit commodi cum. Quos, consequatur accusantium? Ut corporis qui architecto. Labore nisi alias placeat.
 ---
