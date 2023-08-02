@@ -2,9 +2,6 @@ collections:
   posts:
     output: true
     permalink: /posts/:year/:slug
-  archives:
-    output: true
-    permalink: /achives/:slug
   products-presets:
     output: true
     permalink: /shop/presets/:slug
@@ -106,14 +103,6 @@ _array_structures:
       content_html:
 
 _inputs:
-  cta-shortcode:
-    type: select
-    options:
-      values:
-        - web-dev
-        - photography
-      # data.site-settings.cta-shortcode
-
   banner-heights:
     - min-h-60
     - min-h-70

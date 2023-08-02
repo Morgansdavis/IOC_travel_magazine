@@ -9,11 +9,11 @@ seo:
   keywords:
   hide-from-google: false
 ---
-<section class="p-5p max-w-screen-xl mx-auto" x-data="{ filter: 'all' }">
+<section class="max-w-screen-xl mx-auto p-5p" x-data="{ filter: 'all' }">
 
-	<h2 class="text-center text-4xl mb-4 editable"> Shop all products </h2> 
+	<h2 class="mb-4 text-4xl text-center editable"> Shop all products </h2> 
 
-	<div class="filter"> 
+	<div class="text-center filter"> 
 		<a href="#" class="button editable" :class="{'active':filter === 'all'}" @click.prevent="filter = 'all'">All</a>
         <a href="#" class="button editable" :class="{'active':filter === 'travel-guide'}" @click.prevent="filter = 'travel-guide'">Travel Guides</a>
         <a href="#" class="button editable" :class="{'active':filter === 'preset'}" @click.prevent="filter = 'preset'">Presets </a>
@@ -26,11 +26,10 @@ seo:
 	{% for product in all_products %}
 		
 		<div class="{{product.type | slugify }}" x-show="filter === 'all' || filter === '{{ product.type | slugify }}'">
-		{% include product-loop-item-square.html type=product.type  %}
+			{% include product-loop-item-square.html type=product.type  %}
 		</div>
-			
+		
 	{% endfor %}
 
 	</div>
-
 </section>

@@ -24,12 +24,8 @@ sliderContainer.addEventListener('mousemove',(e) => {
   updateImageSlide(e)
 })
 
-//   
-
 // Open your HTML file in a web browser, and you should now have a slider that adjusts its width based on the mouse position.
-
 // By following these beginner-friendly instructions, you should be able to successfully implement the provided GSAP functionality for the slider on your web page.
-
 
 // change image functionality
 const altImageGrid = document.querySelector('#alt-image-grid')

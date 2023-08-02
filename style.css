@@ -1,18 +1,12 @@
-/* ----------- Color Variables --------- */
-/* Looking for the color variables? They have been moved to the inline-styles file in the _includes folder, and pull variables from the site-settings folder in the _data folder.  */
-
 /* Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* ------- typography 
-      sans: ['Montserrat', 'sans-serif'],
-      serif: ['Italiana', 'serif'],
-
-/* 
-
-/* ----------- CSS RESET --------- */
+    sans: ['Montserrat', 'sans-serif'],
+    serif: ['Italiana', 'serif'],
+*/ 
 
 @layer base {
     
@@ -28,17 +22,16 @@
         @apply bg-stone-300
     }
 
-
     h2 {
-        @apply text-xl md:text-4xl uppercase font-serif;
+        @apply font-serif text-xl uppercase md:text-4xl;
     }
 
     a {
-        @apply uppercase font-serif font-light text-sm tracking-wide p-1 block;
+        @apply block p-1 font-serif text-sm font-light tracking-wide uppercase;
     }
 
     .blog-content h2, h3, h4, h5 {
-        @apply text-sm md:text-base	 uppercase font-sans;
+        @apply font-sans text-sm uppercase md:text-base;
     }
 
     .blog-content p {
@@ -51,65 +44,58 @@
     .blog-content blockquote p {
         @apply font-serif text-4xl not-italic font-normal; 
     }
-
-
-} /* end layer base */
-
-    /* div {
-        background-size: cover;
-        background-position: center;
-    } */
-
+}
 
 /* Custom CSS */
-
 @layer components {
+    
     .flex-center {
-      @apply flex justify-center items-center;
+        @apply flex items-center justify-center;
     }
     .tag {
-
-        @apply uppercase text-zinc-600 text-xs tracking-wide;
+        @apply text-xs tracking-wide uppercase text-zinc-600;
     }
     .button{
-        @apply bg-stone-600 text-white px-4 py-2 m-1 inline-block;
+        @apply inline-block px-4 py-2 m-1 text-white bg-stone-600;
     }
     .filter .active {
         @apply  bg-stone-100 text-zinc-600
     }
-  }
-
-#memberspace-login-form ms-widget-ui {
-    display: flex;
-    justify-content: left;
 }
 
-#memberspace-section #memberspace-login-form input {
-    border-color: #000;
-    border: 0;
-    border-bottom: 2px solid black;
-    border-radius: 0;
-    background-color: #d6d3d1;
+@layer utilities {
+
+    #memberspace-login-form ms-widget-ui {
+        display: flex;
+        justify-content: left;
     }
 
-#memberspace-section #memberspace-login-form label {
-    font-family: 'Montserrat', 'sans-serif';
-    text-transform: uppercase;
-    font-weight: 400;
+    #memberspace-section #memberspace-login-form input {
+        border-color: #000;
+        border: 0;
+        border-bottom: 2px solid black;
+        border-radius: 0;
+        background-color: #d6d3d1;
+        }
+
+    #memberspace-section #memberspace-login-form label {
+        font-family: 'Montserrat', 'sans-serif';
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    /* Forgot Email / forgot password text */
+    #memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
+        color: green;
+    }
+
+    #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
+        color: red;
+    }
+
+    #memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
+        color: blue;
+    }
+
+    .MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }
 }
-
-/* Forgot Email / forgot password text */
-#memberspace-login-form .MemberSpaceWidgetInternal__InputWrapper_labelRight {
-    color: green;
-}
-
-
-#memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-primary {
-    color: red;
-}
-
-#memberspace-login-form .MemberSpaceWidgetInternal__Button_variant-secondary {
-    color: blue;
-}
-
-.MemberSpaceWidgetInternal__BrandedInterface_footer {display: none; }

@@ -1,18 +1,18 @@
 
 <a class="p-2 block {{include.type}}" href="{{ product.url }}">
     <div class="aspect-square bg-[url('{{ product.hover-image }}')] bg-cover bg-center relative">
-        <img src="{{ product.featured-image }}" alt="{{product.title}}" class="hover:opacity-0 transition-opacity absolute inset-0 w-full h-full object-cover object-center">
+        <img src="{{ product.featured-image }}" alt="{{product.title}}" class="absolute inset-0 object-cover object-center w-full h-full transition-opacity hover:opacity-0">
     </div>
-    <div class="p-8 relative bg-stone-100">
+    <div class="relative p-8 bg-stone-100">
 
-         <p class="uppercase text-xs tracking-wide mb-2">
+        <p class="mb-2 text-xs tracking-wide uppercase">
             {% for item in product.categories %}
-                <span class="tag mr-2 text-stone-400"> {{item}} </span>
+                <span class="mr-2 tag text-stone-400"> {{item}} </span>
             {% endfor %}
         </p>
-        <span class="tag bg-stone-200 text-xs mb-2"> {{include.type}} </span>
+        <span class="mb-2 text-xs tag bg-stone-200"> {{include.type}} </span>
         <h2 class="font-serif text-2xl"> {{ product.title }} </h2>
-        <p class="line-clamp-3 tracking-wide mb-4 text-xs"> {{ product.description }}</p>
+        <p class="mb-4 text-xs tracking-wide line-clamp-3"> {{ product.description }}</p>
         <p class="font-serif text-xl"> {{product.price}} </p>
 
     </div>

@@ -18,9 +18,9 @@ divider-image: /uploads/travel/travel-6.jpg
 
 <!------- Travel Guide Section ---------->
 <section class="p-5p">
-	<h2 class="max-w-screen-xl mx-auto text-center mb-5 editable"> Travel Guides </h2>
+	<h2 class="max-w-screen-xl mx-auto mb-5 text-center editable"> Travel Guides </h2>
 
-	<div class="max-w-screen-xl mx-auto grid sm:grid-cols-3">
+	<div class="grid max-w-screen-xl mx-auto sm:grid-cols-3">
 
 	{% for product in site.products-guides limit:6 %}
 
@@ -37,21 +37,16 @@ divider-image: /uploads/travel/travel-6.jpg
 <!------- image divider Section ---------->
 
 <section>
-	<div class="p-5p min-h-60 bg-cover bg-center flex items-center" style="background-image: url( '{{ page.divider-image }}' )">  
-		<h3 class="text-4xl max-w-md text-white normal-case font-serif editable"> "Once you get a taste for travel, you'll never be the same." </h3>
+	<div class="flex items-center bg-center bg-cover p-5p min-h-60" style="background-image: url( '{{ page.divider-image }}' )">  
+		<h3 class="max-w-md font-serif text-4xl text-white normal-case editable"> "Once you get a taste for travel, you'll never be the same." </h3>
 	</div>
-
 </section>
 
-
-
-
 <!------- Preset Section ---------->
-
 <section class="p-5p">
-	<h2 class="max-w-screen-xl mx-auto text-center mb-5 editable"> Product Presets </h2>
+	<h2 class="max-w-screen-xl mx-auto mb-5 text-center editable"> Product Presets </h2>
 
-	<div class="max-w-screen-xl mx-auto grid sm:grid-cols-3">
+	<div class="grid max-w-screen-xl mx-auto sm:grid-cols-3">
 
 	{% for product in site.products-presets limit:6  %}
 

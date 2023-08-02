@@ -4,15 +4,15 @@
 
             <div class="relative border-t border-zinc-800">
 
-                <button type="button" class="py-6 block w-full" 
+                <button type="button" class="block w-full py-6" 
                         @click="selected !== {{ forloop.index }} ? selected = {{ forloop.index }} : selected = null">
                     <div class="flex items-center justify-between">
-                        <h4 class="mb-0 uppercase tracking-wide font-sans">{{ item.title }}</h4>
+                        <h4 class="mb-0 font-sans tracking-wide uppercase">{{ item.title }}</h4>
                         <span> + </span>
                     </div>
                 </button>
 
-                <div class="relative overflow-hidden transition-all max-h-0 duration-700" style="" x-ref="container{{ forloop.index }}" x-bind:style="selected == {{ forloop.index }} ? 'max-height: ' + $refs.container{{ forloop.index }}.scrollHeight + 'px' : ''">
+                <div class="relative overflow-hidden transition-all duration-700 max-h-0" style="" x-ref="container{{ forloop.index }}" x-bind:style="selected == {{ forloop.index }} ? 'max-height: ' + $refs.container{{ forloop.index }}.scrollHeight + 'px' : ''">
                     <div class="pb-6">
                         <p class="mb-0">{{ item.description }}</p>
                     </div>
@@ -41,4 +41,4 @@ Here's a breakdown of what the Alpine.js code is doing in this accordion example
     In summary, the Alpine.js code in this example provides the interactivity of the accordion. It tracks which accordion item is open and updates the styles of the items when they are clicked to open or close them.
 
 
- -->
+-->

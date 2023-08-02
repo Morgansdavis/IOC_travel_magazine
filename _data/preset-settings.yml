@@ -1,11 +1,7 @@
 presets-instructions_html: |
-            <ul>
-                    <li> Lorem ipsum dolor </li>
-                    <li> Lorem ipsum dolor </li>
-                    <li> Lorem ipsum dolor </li>
-                    <li> Lorem ipsum dolor </li>
-                    <li> Lorem ipsum dolor </li>
-                    <li> Lorem ipsum dolor </li>
-                    <li> Lorem ipsum dolor </li>
-                </ul>
+    <ul>
+        <li> Import Presets - Download preset files to your computer then import them into Lightroom </li>
+        <li> Apply a Preset - With a photo selected, click on a preset in the Presets panel to apply it. </li>
+        <li> Adjust Preset Settings - Use the sliders in the Develop panel to fine-tune a preset's effects like exposure, contrast, warmth etc. </li>
+    </ul>
 presets-instructions-vimeo-id: 663318015

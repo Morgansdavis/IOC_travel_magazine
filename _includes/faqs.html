@@ -1,20 +1,19 @@
-<hr class="border-1 border-black">
+<hr class="border-black border-1">
 
 <div x-data="{ selected: null }">
     
-
     {% for item in include.faqs-source %}
         <div class="relative">
 
-            <button type="button" class="py-6 block w-full" 
+            <button type="button" class="block w-full py-6" 
                     @click="selected !== {{ forloop.index }} ? selected = {{ forloop.index }} : selected = null">
                 <div class="flex items-center justify-between">
-                    <h4 class="mb-0 uppercase tracking-wide">{{ item.question }}</h4>
+                    <h4 class="mb-0 tracking-wide uppercase">{{ item.question }}</h4>
                     <i class="iconoir-nav-arrow-right"> </i> 
                 </div>
             </button>
 
-            <div class="relative overflow-hidden transition-all max-h-0 duration-700" 
+            <div class="relative overflow-hidden transition-all duration-700 max-h-0" 
                     style="" x-ref="container{{ forloop.index }}" 
                     x-bind:style="selected == {{ forloop.index }} ? 'max-height: ' + $refs.container{{ forloop.index }}.scrollHeight + 'px' : ''">
                 <div class="pb-6">
@@ -23,10 +22,8 @@
             </div>
 
         </div>
-        <hr class="border-1 border-black">
+        <hr class="border-black border-1">
     {% endfor %}
-
-    
 
 </div>
 

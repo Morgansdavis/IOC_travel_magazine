@@ -1,9 +1,8 @@
-- question: Frequently Asked Question - 1
-  answer: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam mollitia ipsa aliquid dignissimos fugit voluptas perferendis cupiditate et alias architecto id aperiam molestiae, quasi, sit harum veritatis accusantium aspernatur? Excepturi!
-- question: Frequently Asked Question - 2
-  answer: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam mollitia ipsa aliquid dignissimos fugit voluptas perferendis cupiditate et alias architecto id aperiam molestiae, quasi, sit harum veritatis accusantium aspernatur? Excepturi!
-- question: Frequently Asked Question - 3
-  answer: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam mollitia ipsa aliquid dignissimos fugit voluptas perferendis cupiditate et alias architecto id aperiam molestiae, quasi, sit harum veritatis accusantium aspernatur? Excepturi!
-- question: Frequently Asked Question - 4
-  answer: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam mollitia ipsa aliquid dignissimos fugit voluptas perferendis cupiditate et alias architecto id aperiam molestiae, quasi, sit harum veritatis accusantium aspernatur? Excepturi!
-
+- question: What are Lightroom presets and how do they work?
+  answer: Lightroom presets are settings that have been pre-configured to apply a specific style or effect to photos. They save a group of edits related to things like tone, color, sharpness etc that can be applied to one or many photos with just one click.
+- question: How do I install new Lightroom presets?
+  answer: To install presets in Lightroom, first download the preset files, usually with a .lrtemplate extension. Then in Lightroom, go to Develop > Presets and click the plus icon to select the preset files and install them. They will then show up in your Presets panel.
+- question: What types of Lightroom presets are good for portraits?
+  answer: Some popular presets for portraits include soft, golden hour or orange and teal styles. These tend to gently brighten skin, enhance warmth in tones, and can add nice contrast. Vintage and black & white options also work well for portrait effects.
+- question: Can I create my own Lightroom presets?
+  answer: Yes, Lightroom makes it easy to create your own presets. Simply apply any edits you want to a photo, then in the Develop panel, click the plus icon next to Presets and choose "Create New Preset" to save those settings as a new preset. You can reuse it across photos.

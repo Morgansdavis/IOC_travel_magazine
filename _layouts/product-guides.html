@@ -9,10 +9,10 @@ layout: default
 			<h2 class="mb-4"> {{ page.title }} </h2>
 			<h3 class="mb-4"> {{ page.subtitle }} </h3>
 			<p class="mb-4"> {{ page.description }} </p>
-			 {% include buy-button.html buy-button-id=page.buy-button-id %}
+				{% include buy-button.html buy-button-id=page.buy-button-id %}
 		</div>
 		<div class="relative">
-			<img class="absolute inset-0 object-cover h-full w-full" src="{{page.featured-image }}" alt=" {{product.title}}">
+			<img class="absolute inset-0 object-cover w-full h-full" src="{{page.featured-image }}" alt=" {{product.title}}">
 		</div>
 	</div>
 </section>
@@ -20,7 +20,7 @@ layout: default
 <!---------------- thumbnail gallery  ------------>
 
 <section class="bg-stone-300 p-5p">
-    <h2 class="text-2xl uppercase text-center"> What's Inside </h2>
+    <h2 class="text-2xl text-center uppercase"> What's Inside </h2>
     <div class="max-w-screen-xl mx-auto">
 
             {% include thumbnail-gallery.html %}
@@ -32,14 +32,14 @@ layout: default
 
 <section>
 
-	<div class="grid grid-cols-3 p-5p max-w-screen-xl mx-auto"> 
+	<div class="grid max-w-screen-xl grid-cols-3 mx-auto p-5p"> 
 	<div class="col-span-2 pr-12">
 		<h2 class="mb-4"> Table of Contents </h2>
 		{% include accordion.html 
             accordion-source=page.table-of-contents %}
 	</div>
 
-	<div class=" col-span-1 mb-5">
+	<div class="col-span-1 mb-5 ">
         <h2 class="mb-4"> What's Included </h2>
         <div class="mb-4"> {{ page.whats-included_html }} </div>
 	</div>
@@ -49,10 +49,10 @@ layout: default
 
 <!---------------- Product section ------------>
 
-<section class="p-5p  bg-stone-200 ">
-	<h2 class="max-w-screen-xl mx-auto text-center mb-5"> related products </h2>
+<section class="p-5p bg-stone-200 ">
+	<h2 class="max-w-screen-xl mx-auto mb-5 text-center"> related products </h2>
   
-	<div class="max-w-screen-xl mx-auto grid sm:grid-cols-3">
+	<div class="grid max-w-screen-xl mx-auto sm:grid-cols-3">
   
 
 		{% for product in site.products-guides limit: 3 %}
